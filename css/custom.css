@@ -23,18 +23,32 @@ h6 {
 	}
 
 /* bar chart */
-.axis text {
+.bar {
+	fill: #8E7060;
+}
+
+.axis {
 	font: 10px sans-serif;
+	fill: #333;
+}
+
+.axis-title {
+	fill: #9C8B83;
+	font-size: 11px;
 }
 
 .axis path,
 .axis line {
 	fill: none;
-	stroke: #000;
+	stroke: #333;
 	shape-rendering: crispEdges;
 }
 
-.x.axis path {
+.x-axis {
+	font-size: 12px;
+}
+
+.x-axis path {
 	display: none;
 }
 
