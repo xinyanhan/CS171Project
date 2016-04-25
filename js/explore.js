@@ -40,15 +40,6 @@ var conflictDic = {"Battle-No change of territory":0,"Riots/Protests":1,"Remote 
 var selection = "Conflicts";
 
 
-// add tooltip
-var tip = d3.tip()
-    .attr('class', 'd3-tip')
-    .html(function(d, i) {
-        return "Conflicts: "+ (d.y1- d.y0);
-    })
-    .offset([-6, 0]);
-svg.call(tip);
-
 
 readData();
 
