@@ -19,8 +19,108 @@ h6 {
 	background-color: #dd845a;
 	color: white;
 	text-shadow: 1px 1px 8px black;
-	padding: 80px 100px 100px 100px;
+	padding: 80px 80px 70px 100px;
 	}
+
+/* bar chart */
+.axis text {
+	font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+	fill: none;
+	stroke: #000;
+	shape-rendering: crispEdges;
+}
+
+.x.axis path {
+	display: none;
+}
+
+
+/*********************/
+/*  TOOLTIP OVERLAY  */
+/*********************/
+
+.tooltip-title {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: 600;
+}
+
+.d3-tip {
+	line-height: 1;
+	padding: 12px;
+	background: rgba(0, 0, 0, 0.8);
+	color: #fff;
+	border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+	box-sizing: border-box;
+	display: inline;
+	font-size: 10px;
+	width: 100%;
+	line-height: 1;
+	color: rgba(0, 0, 0, 0.8);
+	content: "\25BC";
+	position: absolute;
+	text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+	margin: -1px 0 0 0;
+	top: 100%;
+	left: 0;
+}
+
+
+
+
+
+/*************/
+/*    FORM   */
+/*************/
+
+.form-inline {
+	margin-bottom: 30px;
+}
+
+.form-control {
+	background: #E2DDD1;
+	border: 1px solid #D49999;
+	width: 250px;
+}
+
+.form-group label {
+	font-weight: 400;
+	margin-right: 10px;
+}
+
+.form-inline button, .btn-link:active {
+	border-left: 1px solid #888;
+	margin-left: 15px;
+	padding-left: 15px;
+	color: #333;
+	cursor: pointer;
+	outline: none;
+}
+.form-inline button:hover, .btn-link:active, .btn-link:focus  {
+	border-left: 1px solid #888;
+	color: #8E7060;
+	text-decoration: none;
+	outline: none;
+}
+.form-inline button .glyphicon {
+	margin-right: 5px;
+}
+
+
+
+
 
 .feature .btn {
 	text-shadow: none;

@@ -82,17 +82,34 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
-                <h1 class="text-center">Overview</h1>
-                <p class="lead text-center">Our final project is about the conflicts that have occurred in southeast asia for the year 2015.
-					At a high level, our goal is to show users that the conflicts in southeast asia are going up/down. .</p>
+                <h1 class="text-center">Explore</h1>
+
             </div>
         </div>
     </div>
 
-    <input id="clickMe" type="button" value="PLAY" onclick="addlocations();">
-    <div id="time"></div>
-    <div id="map"></div>
-		
+    <p></br></p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-4">
+                <select id="y-type" onchange="updateVisualization()" class="form-control">
+                    <option value="stores">Fatalities</option>
+                    <option value="revenue">conflicts</option>
+                </select>
+            </div>
+
+            <div class="col-xs-8">
+            </div>
+        </div>
+    </div>
+
+    <div id="barchart"></div>
+
+
+
+
+
 	<!-- Footer -->
 	<footer>
         <!-- Copyright etc -->
@@ -115,7 +132,8 @@
 	<script src="js/ie10-viewport-bug-workaround.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/d3.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/d3.tip.v0.6.3.js"></script>
+    <script src="js/explore.js"></script>
 
 	
 </body>
